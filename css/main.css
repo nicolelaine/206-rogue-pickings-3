@@ -1,0 +1,243 @@
+/*
+*{
+	outline: 1px solid red;
+ }
+*/
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+	padding: 0 30px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+header h1 {
+	margin: 0;
+	padding: 38px 0 20px 0;
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 20px 0;
+	width: 100%;
+
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 10px 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+	border-top: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5625em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	border-top: 1px solid #eee;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.section-one h3 {
+	padding: 10px 0px 5px 0;
+	width: 100%;
+}
+
+.section-two h3,
+.section-three h3 {
+	padding-top: 10px;
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.313em;
+	padding: 0;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 0;
+	width: 100%;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	width: 100%;
+	border-top: 1px solid #eee;
+	text-align: left;
+	padding: 5px 0 5px 0;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+
+
+@media all and (min-width:768px) {
+	.bottom-section {
+		justify-content: space-between;
+		align-items: flex-start;
+		border-top: 1px solid #eee;;
+	}
+	
+	.section-one {
+		width: 30%;
+		align-content: center;
+		border-top: none;
+	}
+
+	.section-two {
+		width: 30%;
+		align-content: center;
+		border-top: none;
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		padding: 0px 20px 0 30px;
+	}
+
+	.section-three {
+		width: 30%;
+		align-content: center;
+		border-top: none;
+	}
+
+	footer {
+		text-align: center;
+	}
+}
+
+@media all and (min-width:1200px) {
+/*Desktop styles here*/
+	header {
+		align-items: flex-start;
+	}
+
+	header h1 {
+		width: 60%;
+		padding: 50px 0 30px 0;
+		border-bottom: none;
+		text-align: left;
+	}
+	header nav {
+		width: 40%;
+	}
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 0 27px 0;
+	}
+}
